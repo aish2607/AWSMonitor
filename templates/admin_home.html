@@ -1,0 +1,6 @@
+{% extends 'admin_layout.html' %} {% block title %}Home{% endblock %} {% block content %}
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+<p>ADD USERS
+    <button type="button" class="btn btn-light" style="float: right">
+<a href="{{ url_for('register') }}">Register</a></button></p>{% endblock %}
